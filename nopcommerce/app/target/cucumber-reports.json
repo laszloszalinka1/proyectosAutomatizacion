@@ -1,0 +1,229 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "usuario ya tiene la sesion activa",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13729974300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "el usuario se encuentra en la pantalla de productos",
+            "match": {
+              "location": "CrearProductoPage.irAProductos()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "el usuario va a crear un producto",
+        "description": "",
+        "id": "probar-la-funcionalidad-de-la-pantalla-productos;el-usuario-va-a-crear-un-producto",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4028955500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "el usuario da clic en el boton Add new",
+            "match": {
+              "location": "CrearProductoPage.agregarProducto()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2763052500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "el usuario llena la informacion solicitada y da clic en el boton Save",
+            "match": {
+              "location": "CrearProductoPage.llenarFormulario()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2306919000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "el usuario puede validar el producto creado",
+            "match": {
+              "location": "CrearProductoPage.validarProducto()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@producto"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "usuario ya tiene la sesion activa",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3755049600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "el usuario se encuentra en la pantalla de productos",
+            "match": {
+              "location": "CrearProductoPage.irAProductos()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Probar la funcionalidad de modificar producto",
+        "description": "",
+        "id": "probar-la-funcionalidad-de-la-pantalla-productos;probar-la-funcionalidad-de-modificar-producto",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5413970900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "el usuario filtra un producto y da clic en edit",
+            "match": {
+              "location": "ModificarPorductoSteps.filtraProdYEdit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2927499600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "el usuario modifica el nombre y da clic en save",
+            "match": {
+              "location": "ModificarPorductoSteps.modificarProd()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2187462200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "el usuario valida que se haya modificado correctamente",
+            "match": {
+              "location": "ModificarPorductoSteps.validarModificacion()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@producto"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "usuario ya tiene la sesion activa",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4046298300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "el usuario se encuentra en la pantalla de productos",
+            "match": {
+              "location": "CrearProductoPage.irAProductos()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Eliminar producto modificado",
+        "description": "",
+        "id": "probar-la-funcionalidad-de-la-pantalla-productos;eliminar-producto-modificado",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1073189000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "el usuario selecciona el producto modificado previamente",
+            "match": {
+              "location": "EliminarProductoSteps.selProdModificado()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 892624000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "el usuario da clic en el boton delete",
+            "match": {
+              "location": "EliminarProductoSteps.eliminarProd()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 673200300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "el usuario valida que no se muestre el producto que fue eliminado",
+            "match": {
+              "location": "EliminarProductoSteps.validarProdEliminado()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@producto"
+          }
+        ]
+      }
+    ],
+    "name": "probar la funcionalidad de la pantalla productos",
+    "description": "",
+    "id": "probar-la-funcionalidad-de-la-pantalla-productos",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Products.feature",
+    "tags": []
+  }
+]
